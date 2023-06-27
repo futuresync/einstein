@@ -1,5 +1,4 @@
 <head>
-
     <title>
         <?php wp_title('|', true, 'right'); ?>
         <?php bloginfo('name'); ?>
@@ -19,11 +18,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </head>
 
-<header class="has-text-centered">
-    <div class="clearheader"></div>
-    <?php display_custom_logo(); ?>
-    <div class="clearheader"></div>
-    <p class="color7">navegue por marcas</p>
+<div class="toggle-content">
+    <p class="color7">Navegue por marcas</p>
     <ul class="category-list">
         <?php
         $categories = get_categories(); // Obtém todas as categorias
@@ -33,12 +29,41 @@
             $category_link = get_category_link($category->term_id); // Obtém a URL da página da categoria
             echo '<li><a href="' . esc_url($category_link) . '">' . $category->name . '</a></li>'; // Exibe o link da categoria
             $count++;
-
-            if ($count % 7 === 0) {
-                echo '<br>'; // Quebra de linha após o oitavo item
-            }
         }
         ?>
     </ul>
+</div>
+<div class="toggle">
+    <a class="button is-info is-small" onclick="openMenu();">menu</a>
+</div>
+
+<header class="has-text-centered">
     <div class="clearheader"></div>
+    <?php display_custom_logo(); ?>
+    <div class="clearheader"></div>
+    <div class="brands">
+        <p class="color7">navegue por marcas</p>
+        <ul class="category-list">
+            <?php
+            $categories = get_categories(); // Obtém todas as categorias
+            $count = 0;
+
+            foreach ($categories as $category) {
+                $category_link = get_category_link($category->term_id); // Obtém a URL da página da categoria
+                echo '<li><a href="' . esc_url($category_link) . '">' . $category->name . '</a></li>'; // Exibe o link da categoria
+                $count++;
+
+                if ($count % 7 === 0) {
+                    echo '<br>'; // Quebra de linha após o oitavo item
+                }
+            }
+            ?>
+        </ul>
+        <div class="clearheader"></div>
+    </div>
 </header>
+<script>
+    function openMenu() {
+        $(".toggle-content").fadeIn();
+    }
+</script>
