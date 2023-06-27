@@ -1,0 +1,80 @@
+/*
+
+Theme Name: Einstein
+Theme URI: https://numerical.store/einstein
+Author: Numerical
+Author URI: https://numerical.store
+Description: Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks or elementor. 
+Tags: blog, custom-menu, editor-style, translation-ready, accessibility-ready
+Version: 0.1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: einstein
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+body{
+    background: linear-gradient(0deg,#203354, #152238);
+}
+
+/* Colors */
+:root {
+    --color1: #152238;
+    --color2: #192841;
+    --color3: #1c2e4a;
+    --color4: #203354;
+    --color5: #23395d;
+    --color6: goldenrod;
+    --color7: aliceblue;
+}
+::selection {      background: red }
+::-moz-selection { background: red }
+
+.color1{ color: var(--color1) !important; }
+.color2{ color: var(--color2) !important; }
+.color3{ color: var(--color3) !important; }
+.color4{ color: var(--color4) !important; }
+.color5{ color: var(--color5) !important; }
+.color6{ color: var(--color6) !important; }
+.color7{ color: var(--color7) !important; }
+
+.clearheader{
+    height: 30px;
+}
+header p{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+header ul li{
+    display: inline;
+    padding-left: 10px;
+    line-height: 50px;
+}
+header ul li a{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--color4);
+    color: goldenrod;
+
+    /* fx */
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+
+    -webkit-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
+}
+header ul li a:hover{
+    background-color: var(--color1);
+    color: aliceblue;
+    border: 1px solid goldenrod;
+}
