@@ -18,8 +18,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 */
 
-body{
-    background: linear-gradient(0deg,#203354, #152238);
+body {
+    background: linear-gradient(0deg, #203354, #152238);
 }
 
 /* Colors */
@@ -32,33 +32,63 @@ body{
     --color6: goldenrod;
     --color7: aliceblue;
 }
-::selection {      background: red }
-::-moz-selection { background: red }
 
-.color1{ color: var(--color1) !important; }
-.color2{ color: var(--color2) !important; }
-.color3{ color: var(--color3) !important; }
-.color4{ color: var(--color4) !important; }
-.color5{ color: var(--color5) !important; }
-.color6{ color: var(--color6) !important; }
-.color7{ color: var(--color7) !important; }
+::selection {
+    background: red
+}
 
-.clearheader{
+::-moz-selection {
+    background: red
+}
+
+.color1 {
+    color: var(--color1) !important;
+}
+
+.color2 {
+    color: var(--color2) !important;
+}
+
+.color3 {
+    color: var(--color3) !important;
+}
+
+.color4 {
+    color: var(--color4) !important;
+}
+
+.color5 {
+    color: var(--color5) !important;
+}
+
+.color6 {
+    color: var(--color6) !important;
+}
+
+.color7 {
+    color: var(--color7) !important;
+}
+
+.clearheader {
     height: 30px;
 }
-header p{
+
+header p {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-header ul li{
+
+header ul li {
     display: inline;
     padding-left: 10px;
-    line-height: 50px;
+    line-height: 30px;
 }
-header ul li a{
+
+header ul li a {
+    font-size: 12px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 6px;
     background-color: var(--color4);
     color: goldenrod;
 
@@ -73,7 +103,8 @@ header ul li a{
     -o-transition: color .5s ease-out;
     transition: color .5s ease-out;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     background-color: var(--color1);
     color: aliceblue;
     border: 1px solid goldenrod;
