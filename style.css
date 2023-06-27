@@ -26,7 +26,8 @@ body {
 }
 
 /* Bulma Fix */
-.title, .subtitle{
+.title,
+.subtitle {
     font-weight: 200 !important;
 }
 
@@ -79,16 +80,46 @@ body {
 }
 
 /* Spaces */
-.clear10x{  height: 10px; }
-.clear20x{  height: 20px; }
-.clear30x{  height: 30px; }
-.clear40x{  height: 40px; }
-.clear50x{  height: 50px; }
-.clear60x{  height: 60px; }
-.clear70x{  height: 70px; }
-.clear80x{  height: 80px; }
-.clear90x{  height: 90px; }
-.clear100x{ height: 100px; }
+.clear10x {
+    height: 10px;
+}
+
+.clear20x {
+    height: 20px;
+}
+
+.clear30x {
+    height: 30px;
+}
+
+.clear40x {
+    height: 40px;
+}
+
+.clear50x {
+    height: 50px;
+}
+
+.clear60x {
+    height: 60px;
+}
+
+.clear70x {
+    height: 70px;
+}
+
+.clear80x {
+    height: 80px;
+}
+
+.clear90x {
+    height: 90px;
+}
+
+.clear100x {
+    height: 100px;
+}
+
 .clearheader {
     height: 30px;
 }
@@ -132,30 +163,53 @@ header ul li a:hover {
     border: 1px solid goldenrod;
 }
 
-.index-loop{
+.index-loop {
     padding-left: 160px;
     padding-right: 160px;
 }
-.index-loop p{
+
+.index-loop p {
     font-size: 12px;
     color: whitesmoke !important;
 }
-.index-loop img{
+
+.index-loop img {
     border-radius: 10px;
 }
 
-.index-loop a{
+.index-loop a {
     -webkit-transition: opacity .5s ease-out;
     -moz-transition: opacity .5s ease-out;
     -o-transition: opacity .5s ease-out;
     transition: opacity .5s ease-out;
 }
-.index-loop a:hover{
+
+.index-loop a:hover {
     opacity: .3;
 }
-.index-loop-title{
+
+.index-loop-title {
     font-size: 20px;
     height: auto;
     color: var(--color6);
     margin-bottom: 20px;
+}
+
+.post-box{
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 10px;
+    
+}
+.post-content {
+    font-size: 14px;
+    color: aliceblue;
+    border: 1px solid #6f8ec0;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.post-content strong {
+    font-size: 14px;
+    color: aliceblue;
 }
