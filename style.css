@@ -18,9 +18,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 body {
     background: linear-gradient(0deg, #203354, #152238);
+    font-family: 'Poppins', sans-serif !important;
 }
+
+/* Bulma Fix */
+.title, .subtitle{
+    font-weight: 200 !important;
+}
+
 
 /* Colors */
 :root {
@@ -34,11 +43,11 @@ body {
 }
 
 ::selection {
-    background: red
+    background: goldenrod;
 }
 
 ::-moz-selection {
-    background: red
+    background: goldenrod;
 }
 
 .color1 {
@@ -69,6 +78,17 @@ body {
     color: var(--color7) !important;
 }
 
+/* Spaces */
+.clear10x{  height: 10px; }
+.clear20x{  height: 20px; }
+.clear30x{  height: 30px; }
+.clear40x{  height: 40px; }
+.clear50x{  height: 50px; }
+.clear60x{  height: 60px; }
+.clear70x{  height: 70px; }
+.clear80x{  height: 80px; }
+.clear90x{  height: 90px; }
+.clear100x{ height: 100px; }
 .clearheader {
     height: 30px;
 }
@@ -82,7 +102,7 @@ header p {
 header ul li {
     display: inline;
     padding-left: 10px;
-    line-height: 30px;
+    line-height: 45px;
 }
 
 header ul li a {
@@ -91,6 +111,8 @@ header ul li a {
     padding: 6px;
     background-color: var(--color4);
     color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     /* fx */
     -webkit-transition: background-color .5s ease-out;
@@ -108,4 +130,32 @@ header ul li a:hover {
     background-color: var(--color1);
     color: aliceblue;
     border: 1px solid goldenrod;
+}
+
+.index-loop{
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.index-loop p{
+    font-size: 12px;
+    color: whitesmoke !important;
+}
+.index-loop img{
+    border-radius: 10px;
+}
+
+.index-loop a{
+    -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+.index-loop a:hover{
+    opacity: .3;
+}
+.index-loop-title{
+    font-size: 20px;
+    height: auto;
+    color: var(--color6);
+    margin-bottom: 20px;
 }

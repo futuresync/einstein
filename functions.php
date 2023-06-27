@@ -35,4 +35,13 @@ function show_admin_bar_logged_in()
 }
 add_action('after_setup_theme', 'show_admin_bar_logged_in');
 
+// Remove o editor Gutenberg para postagens e páginas
+add_filter('use_block_editor_for_post', '__return_false', 10);
+
+// Remove o editor Gutenberg para postagens personalizadas
+add_filter('use_block_editor_for_post_type', '__return_false', 10);
+
+// Adiciona suporte a thumbnails
+add_theme_support('post-thumbnails');
+
 ?>

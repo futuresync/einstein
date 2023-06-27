@@ -32,7 +32,7 @@
             echo '<li><a href="' . esc_url($category_link) . '">' . $category->name . '</a></li>'; // Exibe o link da categoria
             $count++;
 
-            if ($count % 8 === 0) {
+            if ($count % 7 === 0) {
                 echo '<br>'; // Quebra de linha após o oitavo item
             }
         }
